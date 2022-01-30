@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 27532809}
   - component: {fileID: 27532808}
   - component: {fileID: 27532812}
+  - component: {fileID: 27532813}
   m_Layer: 0
   m_Name: NpcTest
   m_TagString: Untagged
@@ -159,6 +160,7 @@ MonoBehaviour:
     name: npc test
     sentences:
     - james is mega cringe
+    - james is ultra cringe
 --- !u!61 &27532809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -224,7 +226,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -4628225620171276779, guid: fd3cde5785edac6458de47f92b14799b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -262,6 +264,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7235a4946f2913409214e095f234cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+    name: jaems
+    sentences:
+    - i eat poo
+    - penisfarts
+  NearNPC: 0
+--- !u!61 &27532813
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27532807}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.375}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.375}
+  m_EdgeRadius: 0
 --- !u!114 &44938810 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2059650766409942630, guid: b0c69e7ddbed1154e917dfef20f61804, type: 3}
@@ -286,6 +320,7 @@ GameObject:
   - component: {fileID: 519145853}
   - component: {fileID: 519145852}
   - component: {fileID: 519145856}
+  - component: {fileID: 519145857}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -413,6 +448,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &519145857
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519145851}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.22280711}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5543858}
+  m_EdgeRadius: 0
 --- !u!114 &618822980 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
@@ -571,6 +632,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_text
+      value: This is the text space for NPC dialogue...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_margin.z
+      value: 246.15143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_horizontalMapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 233
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114653764845567, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.86285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114653764845567, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.86285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114653764845567, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.86285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114653764845567, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114653764845567, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18
+      objectReference: {fileID: 0}
     - target: {fileID: 4357114654300513904, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -658,6 +763,14 @@ PrefabInstance:
     - target: {fileID: 4357114654300513916, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_Name
       value: UICanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654324682690, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654324682690, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4357114654324682693, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
