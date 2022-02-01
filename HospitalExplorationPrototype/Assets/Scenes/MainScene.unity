@@ -1163,11 +1163,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8c56c9548ef8d948aa34f79c2760af2, type: 3}
---- !u!1 &767210042 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2591299427351910042, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
-  m_PrefabInstance: {fileID: 1390502257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1000986956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2117,6 +2112,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 300149465729985022, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
   m_PrefabInstance: {fileID: 1390502257}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5152786658472024831, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4446889277138799957, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4521243152149784668, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2727428349784513966, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3392681197119912033, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1396731117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2447,9 +2467,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: ChefSticker
+      value: 
+      objectReference: {fileID: 1390502265}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
       propertyPath: ChefIndicator
       value: 
       objectReference: {fileID: 1390502260}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: DoctorSticker
+      value: 
+      objectReference: {fileID: 1390502263}
     - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
       propertyPath: Receptionist1
       value: 
@@ -2475,13 +2503,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1390502258}
     - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: XRayNurseSticker
+      value: 
+      objectReference: {fileID: 1390502264}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: StatsNurseSticker
+      value: 
+      objectReference: {fileID: 1390502267}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: BloodsNurseSticker
+      value: 
+      objectReference: {fileID: 1390502266}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
       propertyPath: XRayNurseIndicator
       value: 
       objectReference: {fileID: 1390502259}
     - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
       propertyPath: ReceptionistTextBox
       value: 
-      objectReference: {fileID: 767210042}
+      objectReference: {fileID: 0}
     - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
       propertyPath: StatsNurseIndicator
       value: 

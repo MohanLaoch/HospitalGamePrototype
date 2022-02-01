@@ -17,6 +17,12 @@ public class DialoguePlayerTrigger : MonoBehaviour
     public GameObject XRayNurseIndicator;
     public GameObject DoctorIndicator;
 
+    public GameObject StatsNurseSticker;
+    public GameObject BloodsNurseSticker;
+    public GameObject ChefSticker;
+    public GameObject XRayNurseSticker;
+    public GameObject DoctorSticker;
+
     public GameObject ReceptionistTextBox;
     
     public int spoken = 0;
@@ -30,6 +36,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
             spoken = 1;
             StatsNurseIndicator.SetActive(true);
             ReceptionistTextBox.SetActive(false);
+            StatsNurseSticker.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("StatsNurse") && spoken == 1)
@@ -46,6 +53,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
             spoken = 3;
             BloodsNurseIndicator.SetActive(true);
+            BloodsNurseSticker.SetActive(true);
 
         }
 
@@ -64,6 +72,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
             spoken = 5;
             ChefIndicator.SetActive(true);
+            ChefSticker.SetActive(true);
         }
         
         if (other.gameObject.CompareTag("Chef") && spoken == 5)
@@ -80,6 +89,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
             spoken = 7;
             XRayNurseIndicator.SetActive(true);
+            XRayNurseSticker.SetActive(true);
         }
         
         if (other.gameObject.CompareTag("X-RayNurse") && spoken == 7)
@@ -96,6 +106,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
             spoken = 9;
             DoctorIndicator.SetActive(true);
+            DoctorSticker.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("Doctor") && spoken == 9)
