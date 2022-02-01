@@ -31,12 +31,12 @@ public class DialoguePlayerTrigger : MonoBehaviour
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
         }
 
-        if (other.gameObject.CompareTag("X-RayNurse"))
+        if (other.gameObject.CompareTag("X-RayNurse") && Input.GetKeyDown("space"))
         {
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
         }
 
-        if (other.gameObject.CompareTag("BloodsNurse"))
+        if (other.gameObject.CompareTag("BloodsNurse") && Input.GetKeyDown("space"))
         {
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
         }

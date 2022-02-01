@@ -727,6 +727,7 @@ MonoBehaviour:
     sentences:
     - "Hello. I\u2019m going to take your x-ray. Just stand there behind the screen
       and hold still."
+    - "Now you\u2019re all done. It\u2019s time for your operation. Best of luck!"
   NearNPC: 0
 --- !u!1 &630691985 stripped
 GameObject:
@@ -859,6 +860,8 @@ MonoBehaviour:
     name: Chef
     sentences:
     - Hi, would you like something to eat? I got a lovely pizza ready to be cooked.
+    - The nurse will take a picture of you that you will be able to see your skeleton
+      in!
   NearNPC: 0
 --- !u!1001 &730812454
 PrefabInstance:
@@ -2308,6 +2311,7 @@ MonoBehaviour:
     name: BloodsNurse
     sentences:
     - "I\u2019m here to take your bloods. It\u2019ll be done before you know it"
+    - "See, that wasn\u2019t bad at all. You did great!"
   NearNPC: 0
 --- !u!4 &1914401039 stripped
 Transform:
