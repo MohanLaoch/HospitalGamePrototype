@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &120672107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120672108}
+  m_Layer: 0
+  m_Name: -----Indicators-----
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &120672108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120672107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 435.83972, y: 163.85612, z: -22.858253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &123151894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -343,8 +373,9 @@ MonoBehaviour:
   dialogue:
     name: Receptionist
     sentences:
-    - "Now you\u2019re all done. It\u2019s time for you to go to the doctor. He will
-      be waiting up the corridor to your right. Best of luck!"
+    - "Now you\u2019re all done. It\u2019s time for you to go to the doctor. Take
+      this blue sticker to him. He will be waiting up the corridor to your right.
+      Best of luck!"
   NearNPC: 0
 --- !u!61 &197178239
 BoxCollider2D:
@@ -435,7 +466,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223869293
 GameObject:
@@ -588,7 +619,37 @@ Transform:
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &329031340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329031341}
+  m_Layer: 0
+  m_Name: -----Receptionists-----
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329031341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329031340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 435.83972, y: 163.85612, z: -22.858253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &385964956
 GameObject:
@@ -700,7 +761,7 @@ Transform:
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &457875989 stripped
 Animator:
@@ -839,8 +900,8 @@ MonoBehaviour:
     sentences:
     - "Hello. I\u2019m going to take your x-ray. Just stand there behind the screen
       and hold still."
-    - "Now you\u2019re all done. You'll be all set for your operation tomorrow. Best
-      of luck!"
+    - "Now you\u2019re all done. You'll be all set for your operation tomorrow. You
+      can go back to the receptionist now. Best of luck!"
   NearNPC: 0
 --- !u!1 &630691985 stripped
 GameObject:
@@ -974,6 +1035,7 @@ MonoBehaviour:
     sentences:
     - Hi, would you like something to eat? I got a lovely pizza ready to be cooked.
     - Wow you ate that really quickly! You must have been hungry.
+    - The receptionist is waiting to tell you where to go next.
   NearNPC: 0
 --- !u!1001 &730812454
 PrefabInstance:
@@ -1118,7 +1180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1561339103160242529, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 1561339103160242529, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1276,7 +1338,7 @@ MonoBehaviour:
       do before your operation. That is to get an x-ray. Once you\u2019ve done that
       come back to me and then you can go to the doctor."
     - The nurse will take a picture of you that you will be able to see your skeleton
-      in.
+      in. Bring this green sticker to her and come back to me when you're finished.
   NearNPC: 0
 --- !u!61 &1073338202
 BoxCollider2D:
@@ -1367,7 +1429,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1125072518
 GameObject:
@@ -1496,6 +1558,7 @@ MonoBehaviour:
     sentences:
     - "I\u2019m here to take your stats. I will also take your height, weight, and
       blood pressure so the doctor knows them while they do your operation."
+    - All done. Now you can go back to receptionist.
   NearNPC: 1
 --- !u!1 &1128690731
 GameObject:
@@ -1607,7 +1670,7 @@ Transform:
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1150185983
 GameObject:
@@ -1717,7 +1780,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1150185987
 MonoBehaviour:
@@ -1739,8 +1802,8 @@ MonoBehaviour:
       in the hospital. This is so they can get information that will help the doctor
       during your procedure.
     - "First, I\u2019ll need you to go and get your stats checked. The doctor will
-      need your height, weight, and blood pressure. When you have done this, come
-      back to me."
+      need your height, weight, and blood pressure. Take this pink sticker and bring
+      it to her. When you have done this, come back to me."
   NearNPC: 0
 --- !u!1 &1336737174
 GameObject:
@@ -1777,8 +1840,8 @@ MonoBehaviour:
     name: Receptionist
     sentences:
     - "Now that you\u2019ve gotten your bloods done, you should go get something
-      to eat. A little sugar should help your system. When you\u2019re done come
-      back to me."
+      to eat. A little sugar should help your system. Take this yellow sticker and
+      bring it to him. Once you\u2019re done come back to me."
   NearNPC: 0
 --- !u!61 &1336737176
 BoxCollider2D:
@@ -1869,7 +1932,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1390502257
 PrefabInstance:
@@ -2218,7 +2281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2507415176141026422, guid: bf77f446eb7b040458b7fc1e771ea07c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 2507415176141026422, guid: bf77f446eb7b040458b7fc1e771ea07c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2684,7 +2747,7 @@ Transform:
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860922487
 GameObject:
@@ -2812,7 +2875,8 @@ MonoBehaviour:
     name: Bloods Nurse
     sentences:
     - "I\u2019m here to take your bloods. It\u2019ll be done before you know it."
-    - "See, that wasn\u2019t bad at all. You did great!"
+    - "See, that wasn\u2019t bad at all. You did great! Now you can go back to the
+      receptionist."
   NearNPC: 0
 --- !u!1 &1884625248
 GameObject:
@@ -2850,7 +2914,8 @@ MonoBehaviour:
     sentences:
     - "Well done. Now you\u2019re going to have to get your bloods done. This one
       can be a little scary, but the nurse will make sure to be careful with you.
-      When you\u2019re done, return to me."
+      Take this orange sticker and bring it down to her. When you\u2019re done, return
+      to me."
   NearNPC: 0
 --- !u!61 &1884625250
 BoxCollider2D:
@@ -2941,7 +3006,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1914401039 stripped
 Transform:
@@ -3028,7 +3093,7 @@ Transform:
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044676783
 GameObject:
