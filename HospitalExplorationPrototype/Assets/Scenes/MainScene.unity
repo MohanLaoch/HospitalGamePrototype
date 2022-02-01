@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &87480953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3049348422499783215, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+  m_PrefabInstance: {fileID: 1801295381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &87480960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87480953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c0ace3f85ff3d4995e48ab945f1a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &123151894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,6 +208,7 @@ GameObject:
   - component: {fileID: 192077644}
   - component: {fileID: 192077643}
   - component: {fileID: 192077642}
+  - component: {fileID: 192077645}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Doctor
@@ -208,10 +226,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.21921918}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -222,7 +240,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5313671, y: 0.875}
+  m_Size: {x: 0.5313671, y: 1.3134379}
   m_EdgeRadius: 0
 --- !u!212 &192077643
 SpriteRenderer:
@@ -289,6 +307,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &192077645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192077641}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7235a4946f2913409214e095f234cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Doctor
+    sentences:
+    - "Hi, I\u2019m your doctor. I will be preforming your procedure. You\u2019re
+      very brave for getting this done. Follow me and we can start."
+  NearNPC: 0
 --- !u!1 &223869293
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +611,7 @@ GameObject:
   - component: {fileID: 600688431}
   - component: {fileID: 600688430}
   - component: {fileID: 600688429}
+  - component: {fileID: 600688432}
   m_Layer: 0
   m_Name: X-RayNurse
   m_TagString: X-RayNurse
@@ -592,10 +629,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.23252343, y: -0.31736296}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -606,7 +643,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5782525, y: 0.875}
+  m_Size: {x: 1.0432994, y: 1.5097259}
   m_EdgeRadius: 0
 --- !u!212 &600688430
 SpriteRenderer:
@@ -673,6 +710,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &600688432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600688428}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7235a4946f2913409214e095f234cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: X-Ray Nurse
+    sentences:
+    - "Hello. I\u2019m going to take your x-ray. Just stand there behind the screen
+      and hold still."
+  NearNPC: 0
 --- !u!1 &630691985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1561339103160242535, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
@@ -689,6 +744,7 @@ GameObject:
   - component: {fileID: 675700664}
   - component: {fileID: 675700663}
   - component: {fileID: 675700662}
+  - component: {fileID: 675700665}
   m_Layer: 0
   m_Name: Chef
   m_TagString: Chef
@@ -706,10 +762,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.5342732, y: -0.25458646}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -720,7 +776,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5001102, y: 0.921875}
+  m_Size: {x: 1.5686563, y: 1.4310479}
   m_EdgeRadius: 0
 --- !u!212 &675700663
 SpriteRenderer:
@@ -787,6 +843,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &675700665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675700661}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7235a4946f2913409214e095f234cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Chef
+    sentences:
+    - Hi, would you like something to eat? I got a lovely pizza ready to be cooked.
+  NearNPC: 0
 --- !u!1001 &730812454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1203,7 +1276,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125072518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7235a4946f2913409214e095f234cf8, type: 3}
   m_Name: 
@@ -1443,7 +1516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150185983}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7235a4946f2913409214e095f234cf8, type: 3}
   m_Name: 
@@ -2029,6 +2102,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4051977607816366302, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4051977607816366302, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: dialogue.name
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 4051977607816366302, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4051977607816366302, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: testestestestesetsetsetsetsetset
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
 --- !u!1 &1851227326
@@ -2124,6 +2213,7 @@ GameObject:
   - component: {fileID: 1860922490}
   - component: {fileID: 1860922489}
   - component: {fileID: 1860922488}
+  - component: {fileID: 1860922491}
   m_Layer: 0
   m_Name: BloodsNurse
   m_TagString: BloodsNurse
@@ -2141,10 +2231,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.2943042, y: -0.16613962}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2155,7 +2245,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.46885335, y: 0.859375}
+  m_Size: {x: 1.0574614, y: 1.1916543}
   m_EdgeRadius: 0
 --- !u!212 &1860922489
 SpriteRenderer:
@@ -2222,6 +2312,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1860922491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860922487}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7235a4946f2913409214e095f234cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: BloodsNurse
+    sentences:
+    - "I\u2019m here to take your bloods. It\u2019ll be done before you know it"
+  NearNPC: 0
 --- !u!4 &1914401039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3049348422499783211, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}

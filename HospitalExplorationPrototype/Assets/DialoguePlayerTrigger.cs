@@ -20,6 +20,26 @@ public class DialoguePlayerTrigger : MonoBehaviour
         {
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
         }
+
+        if (other.gameObject.CompareTag("Doctor"))
+        {
+            other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
+        }
+
+        if (other.gameObject.CompareTag("Chef"))
+        {
+            other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
+        }
+
+        if (other.gameObject.CompareTag("X-RayNurse"))
+        {
+            other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
+        }
+
+        if (other.gameObject.CompareTag("BloodsNurse"))
+        {
+            other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
