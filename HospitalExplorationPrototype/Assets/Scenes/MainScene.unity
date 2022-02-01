@@ -1031,7 +1031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
       propertyPath: sounds.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
       propertyPath: sounds.Array.data[0].clip
@@ -1046,11 +1046,31 @@ PrefabInstance:
       value: BackgroundTheme
       objectReference: {fileID: 0}
     - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c4d27883d93ffe4286cde10b11ea651, type: 3}
+    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
+      propertyPath: sounds.Array.data[1].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: TextAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
       propertyPath: sounds.Array.data[0].pitch
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
       propertyPath: sounds.Array.data[0].volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
+      propertyPath: sounds.Array.data[1].volume
       value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1194,7 +1214,6 @@ MonoBehaviour:
     - "I\u2019m here to take your stats. I will take your height, weight, and blood
       pressure so the doctor knows them while they do your operation"
   NearNPC: 1
-  dialogueBox: {fileID: 0}
 --- !u!1 &1128690731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,7 +1459,6 @@ MonoBehaviour:
       need your height, weight, and blood pressure. When you have done this, come
       back to me."
   NearNPC: 0
-  dialogueBox: {fileID: 0}
 --- !u!1001 &1390502257
 PrefabInstance:
   m_ObjectHideFlags: 0
