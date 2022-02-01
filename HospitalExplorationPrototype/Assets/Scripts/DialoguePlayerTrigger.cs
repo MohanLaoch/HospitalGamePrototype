@@ -16,6 +16,8 @@ public class DialoguePlayerTrigger : MonoBehaviour
     public GameObject ChefIndicator;
     public GameObject XRayNurseIndicator;
     public GameObject DoctorIndicator;
+
+    public GameObject ReceptionistTextBox;
     
     public int spoken = 0;
 
@@ -27,6 +29,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
             spoken = 1;
             StatsNurseIndicator.SetActive(true);
+            ReceptionistTextBox.SetActive(false);
         }
 
         if (other.gameObject.CompareTag("StatsNurse") && spoken == 1)
