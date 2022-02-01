@@ -27,5 +27,9 @@ public class NpcTestDialogueTrigger : MonoBehaviour
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             gameObject.SetActive(true);
         }
+        if(NearNPC == false)
+        {
+            FindObjectOfType<DialogueManager>().EndDialogue(dialogue);
+        }
     }
 }

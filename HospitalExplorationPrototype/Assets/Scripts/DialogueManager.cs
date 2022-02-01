@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -48,6 +49,11 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));        
     }
 
+    public void EndDialogue()
+    {
+        animator.SetBool("IsOpen", false);
+    }
+
     IEnumerator TypeSentence (string sentence)
     {
         dialogueText.text = "";
@@ -58,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void EndDialogue()
+    public void EndDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", false);
     }
