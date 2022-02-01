@@ -6,10 +6,13 @@ public class NpcTestDialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     public bool NearNPC = false;
-    public GameObject dialogueBox;
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        NearNPC = true;
+        if(other.gameObject.CompareTag("Receptionist"))
+        {
+            NearNPC = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -18,18 +21,26 @@ public class NpcTestDialogueTrigger : MonoBehaviour
     }
     private void Start()
     {
-        dialogueBox.SetActive(false);
+        
     }
     private void Update()
     {
+        
+
         if (NearNPC == true && Input.GetKeyDown("space"))
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-            gameObject.SetActive(true);
+
         }
         if(NearNPC == false)
         {
             FindObjectOfType<DialogueManager>().EndDialogue(dialogue);
         }
+    }
+
+    public void DisplayText()
+    {
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+
     }
 }
