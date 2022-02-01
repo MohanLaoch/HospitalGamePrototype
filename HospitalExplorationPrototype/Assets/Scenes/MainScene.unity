@@ -306,7 +306,8 @@ MonoBehaviour:
     name: Doctor
     sentences:
     - "Hi, I\u2019m your doctor. I will be preforming your procedure. You\u2019re
-      very brave for getting this done. Follow me and we can start."
+      very brave for getting this done. Follow me and we can bring you up to your
+      ward."
   NearNPC: 0
 --- !u!1 &197178237
 GameObject:
@@ -342,7 +343,8 @@ MonoBehaviour:
   dialogue:
     name: Receptionist
     sentences:
-    - "Now you\u2019re all done. It\u2019s time for your operation. Best of luck!"
+    - "Now you\u2019re all done. It\u2019s time for you to go to the doctor. He will
+      be waiting up the corridor to your right. Best of luck!"
   NearNPC: 0
 --- !u!61 &197178239
 BoxCollider2D:
@@ -837,7 +839,8 @@ MonoBehaviour:
     sentences:
     - "Hello. I\u2019m going to take your x-ray. Just stand there behind the screen
       and hold still."
-    - "Now you\u2019re all done. It\u2019s time for your operation. Best of luck!"
+    - "Now you\u2019re all done. You'll be all set for your operation tomorrow. Best
+      of luck!"
   NearNPC: 0
 --- !u!1 &630691985 stripped
 GameObject:
@@ -970,8 +973,7 @@ MonoBehaviour:
     name: Chef
     sentences:
     - Hi, would you like something to eat? I got a lovely pizza ready to be cooked.
-    - The nurse will take a picture of you that you will be able to see your skeleton
-      in!
+    - Wow you ate that really quickly! You must have been hungry.
   NearNPC: 0
 --- !u!1001 &730812454
 PrefabInstance:
@@ -1106,6 +1108,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1561339102851283339, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
+      propertyPath: m_CameraDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1561339103160242529, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1116,7 +1122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1561339103160242529, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 1561339103160242529, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1153,6 +1159,10 @@ PrefabInstance:
     - target: {fileID: 1561339103160242534, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
       propertyPath: m_Follow
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561339103160242534, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1561339103160242535, guid: 67ec6b8084561c34cb1fa79d31a81d4a, type: 3}
       propertyPath: m_Name
@@ -1215,50 +1225,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f8c8c9a8d581d541891e3fdc92f15a3, type: 3}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[0].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[0].name
-      value: BackgroundTheme
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3c4d27883d93ffe4286cde10b11ea651, type: 3}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[1].loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[1].name
-      value: TextAudio
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[0].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[1].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
-      propertyPath: sounds.Array.data[1].volume
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
 --- !u!114 &1069957024 stripped
@@ -1308,9 +1274,9 @@ MonoBehaviour:
     sentences:
     - "Now that you\u2019ve had something to eat, you just have the last thing to
       do before your operation. That is to get an x-ray. Once you\u2019ve done that
-      come back to me and then you can go to the doctor"
+      come back to me and then you can go to the doctor."
     - The nurse will take a picture of you that you will be able to see your skeleton
-      in
+      in.
   NearNPC: 0
 --- !u!61 &1073338202
 BoxCollider2D:
@@ -1526,10 +1492,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: StatsNurse
+    name: Stats Nurse
     sentences:
-    - "I\u2019m here to take your stats. I will take your height, weight, and blood
-      pressure so the doctor knows them while they do your operation"
+    - "I\u2019m here to take your stats. I will also take your height, weight, and
+      blood pressure so the doctor knows them while they do your operation."
   NearNPC: 1
 --- !u!1 &1128690731
 GameObject:
@@ -1771,7 +1737,7 @@ MonoBehaviour:
     - Hi, welcome to the hospital. Today you are going to have an operation done.
       Before the doctors do your operation, you will have to visit different people
       in the hospital. This is so they can get information that will help the doctor
-      during your procedure
+      during your procedure.
     - "First, I\u2019ll need you to go and get your stats checked. The doctor will
       need your height, weight, and blood pressure. When you have done this, come
       back to me."
@@ -1912,6 +1878,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 300149465729985022, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341583883497055061, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341583883497055061, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341583883497055061, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -84.86557
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341583883497055061, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -77.57257
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318471551259469328, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171722579255067331, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171722579255067331, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171722579255067331, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -84.86557
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171722579255067331, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -77.57257
+      objectReference: {fileID: 0}
     - target: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_fontSize
       value: 30
@@ -2092,8 +2098,93 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5846734579457508682, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521179169628118430, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674676403209423494, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674676403209423494, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674676403209423494, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -84.86557
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674676403209423494, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -77.57257
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696807139314043406, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027022293127637088, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027022293127637088, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027022293127637088, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -84.86557
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027022293127637088, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -77.57257
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346237334073938293, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346237334073938293, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346237334073938293, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -84.86557
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346237334073938293, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -77.57257
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+--- !u!1 &1390502258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2318471551259469328, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6521179169628118430, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5846734579457508682, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6696807139314043406, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390502262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 300149465729985022, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+  m_PrefabInstance: {fileID: 1390502257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1396731117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2107,7 +2198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2507415176141026421, guid: bf77f446eb7b040458b7fc1e771ea07c, type: 3}
       propertyPath: orthographic size
-      value: 12
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2507415176141026421, guid: bf77f446eb7b040458b7fc1e771ea07c, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -2131,7 +2222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2507415176141026422, guid: bf77f446eb7b040458b7fc1e771ea07c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 2507415176141026422, guid: bf77f446eb7b040458b7fc1e771ea07c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2424,6 +2515,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: ChefIndicator
+      value: 
+      objectReference: {fileID: 1390502260}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
       propertyPath: Receptionist1
       value: 
       objectReference: {fileID: 1150185983}
@@ -2443,6 +2538,22 @@ PrefabInstance:
       propertyPath: Receptionist5
       value: 
       objectReference: {fileID: 197178237}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: DoctorIndicator
+      value: 
+      objectReference: {fileID: 1390502258}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: XRayNurseIndicator
+      value: 
+      objectReference: {fileID: 1390502259}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: StatsNurseIndicator
+      value: 
+      objectReference: {fileID: 1390502262}
+    - target: {fileID: 87480960, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
+      propertyPath: BloodsNurseIndicator
+      value: 
+      objectReference: {fileID: 1390502261}
     - target: {fileID: 3049348422499783211, guid: 5029eec1c96478e45b8c70c3fa04c83b, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2698,9 +2809,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: BloodsNurse
+    name: Bloods Nurse
     sentences:
-    - "I\u2019m here to take your bloods. It\u2019ll be done before you know it"
+    - "I\u2019m here to take your bloods. It\u2019ll be done before you know it."
     - "See, that wasn\u2019t bad at all. You did great!"
   NearNPC: 0
 --- !u!1 &1884625248
@@ -2739,7 +2850,7 @@ MonoBehaviour:
     sentences:
     - "Well done. Now you\u2019re going to have to get your bloods done. This one
       can be a little scary, but the nurse will make sure to be careful with you.
-      When you\u2019re done, return to me"
+      When you\u2019re done, return to me."
   NearNPC: 0
 --- !u!61 &1884625250
 BoxCollider2D:

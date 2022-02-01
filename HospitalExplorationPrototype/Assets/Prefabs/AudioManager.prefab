@@ -43,4 +43,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36ccd5ec2f9617409cfc040da324947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: BackgroundTheme
+    clip: {fileID: 8300000, guid: 7f8c8c9a8d581d541891e3fdc92f15a3, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: TextAudio
+    clip: {fileID: 8300000, guid: 3c4d27883d93ffe4286cde10b11ea651, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
