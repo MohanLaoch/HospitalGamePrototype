@@ -12,8 +12,8 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/DialoguePlayerTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DialoguePlayerTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24Vq88xQhy9bBcXoRE4zGIuBmBf" />
@@ -60,7 +60,7 @@
       <workItem from="1643725975939" duration="665000" />
       <workItem from="1643726873855" duration="1026000" />
       <workItem from="1643730221152" duration="342000" />
-      <workItem from="1643731325197" duration="883000" />
+      <workItem from="1643731325197" duration="1959000" />
     </task>
     <servers />
   </component>
