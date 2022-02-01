@@ -9,6 +9,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Receptionist"))
         {
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
+           
         }
 
         if(other.gameObject.CompareTag("StatsNurse"))
@@ -31,15 +32,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
             other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
         }
 
-        if (other.gameObject.CompareTag("X-RayNurse") && Input.GetKeyDown("space"))
-        {
-            other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
-        }
-
-        if (other.gameObject.CompareTag("BloodsNurse") && Input.GetKeyDown("space"))
-        {
-            other.GetComponent<NpcTestDialogueTrigger>().DisplayText();
-        }
+  
     }
 
     private void OnTriggerExit2D(Collider2D collision)
