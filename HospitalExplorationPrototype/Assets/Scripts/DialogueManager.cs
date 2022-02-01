@@ -32,13 +32,18 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        
+        FindObjectOfType<AudioManager>().Play("TextAudio");
 
+        
         DisplayNextSentence();
         
     }
 
     public void DisplayNextSentence()
     {
+        FindObjectOfType<AudioManager>().Play("TextAudio");
+        
         if (sentences.Count == 0)
         {
             EndDialogue();

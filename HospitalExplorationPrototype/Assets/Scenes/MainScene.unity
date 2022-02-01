@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c0ace3f85ff3d4995e48ab945f1a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spoken: 0
 --- !u!1001 &123151894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1127,7 +1128,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 3c4d27883d93ffe4286cde10b11ea651, type: 3}
     - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
       propertyPath: sounds.Array.data[1].loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
       propertyPath: sounds.Array.data[1].name
@@ -1147,7 +1148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8344232873177979424, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
       propertyPath: sounds.Array.data[1].volume
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98cbc42922bf0734ab0eb8979a4839da, type: 3}
@@ -1530,7 +1531,7 @@ MonoBehaviour:
     - Hi, welcome to the hospital. Today you are going to have an operation done.
       Before the doctors do your operation, you will have to visit different people
       in the hospital. This is so they can get information that will help the doctor
-      during your procedure
+      during your procedure.
     - "First, I\u2019ll need you to go and get your stats checked. The doctor will
       need your height, weight, and blood pressure. When you have done this, come
       back to me."
