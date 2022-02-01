@@ -318,7 +318,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &192077645
 MonoBehaviour:
@@ -881,7 +881,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &600688432
 MonoBehaviour:
@@ -1016,7 +1016,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &675700665
 MonoBehaviour:
@@ -1335,8 +1335,8 @@ MonoBehaviour:
     name: Receptionist
     sentences:
     - "Now that you\u2019ve had something to eat, you just have the last thing to
-      do before your operation. That is to get an x-ray. Once you\u2019ve done that
-      come back to me and then you can go to the doctor."
+      do before you go up to your ward. You will need to get an x-ray. Once you\u2019ve
+      done that come back to me and then you can go to the doctor."
     - The nurse will take a picture of you that you will be able to see your skeleton
       in. Bring this green sticker to her and come back to me when you're finished.
   NearNPC: 0
@@ -1539,7 +1539,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1125072522
 MonoBehaviour:
@@ -1797,13 +1797,12 @@ MonoBehaviour:
   dialogue:
     name: Receptionist
     sentences:
-    - Hi, welcome to the hospital. Today you are going to have an operation done.
-      Before the doctors do your operation, you will have to visit different people
-      in the hospital. This is so they can get information that will help the doctor
-      during your procedure.
-    - "First, I\u2019ll need you to go and get your stats checked. The doctor will
-      need your height, weight, and blood pressure. Take this pink sticker and bring
-      it to her. When you have done this, come back to me."
+    - Hi, welcome to the hospital. You are going to have an operation. Before the
+      doctors do your operation, you will have to visit different people in the hospital.
+      This is so they can get information that will help the doctor during your procedure.
+    - "First, I\u2019ll need you to go and get your stats, height, weight, and blood
+      pressure checked. Take this pink sticker and bring it to the nurse. When you
+      have done this, come back to me."
   NearNPC: 0
 --- !u!1 &1336737174
 GameObject:
@@ -1841,7 +1840,7 @@ MonoBehaviour:
     sentences:
     - "Now that you\u2019ve gotten your bloods done, you should go get something
       to eat. A little sugar should help your system. Take this yellow sticker and
-      bring it to him. Once you\u2019re done come back to me."
+      bring it to the chef. Once you\u2019re done come back to me."
   NearNPC: 0
 --- !u!61 &1336737176
 BoxCollider2D:
@@ -2138,6 +2137,30 @@ PrefabInstance:
     - target: {fileID: 1368839630623545501, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 137.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 652.6051
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 134.7925
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 362.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654040723286, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 31.5148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654040723286, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 29.5451
       objectReference: {fileID: 0}
     - target: {fileID: 4357114654300513904, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_Pivot.x
@@ -2940,7 +2963,7 @@ Transform:
   m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1860922491
 MonoBehaviour:
