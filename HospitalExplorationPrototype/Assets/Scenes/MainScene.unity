@@ -1182,13 +1182,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114652804898785, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 280
+      value: 958.9556
       objectReference: {fileID: 0}
     - target: {fileID: 4357114652804898798, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 160
+      value: 499.47778
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114653764845566, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114653764845566, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4357114653971385128, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_IsActive
@@ -1289,6 +1305,26 @@ PrefabInstance:
     - target: {fileID: 4357114654300513916, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_Name
       value: UICanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654324682690, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.0670319
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654324682690, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0670319
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654324682690, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.0670319
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654324682690, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -131
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357114654324682690, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 4357114654324682693, guid: e0a6bd1a3ca9d3f45912fd068abf8b12, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
