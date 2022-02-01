@@ -41,6 +41,6 @@ public class NpcTestDialogueTrigger : MonoBehaviour
     public void DisplayText()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-
+        
     }
 }

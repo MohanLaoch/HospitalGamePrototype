@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> sentences;
+    
+    
 
     void Start()
     {
@@ -32,18 +34,14 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-        
-        FindObjectOfType<AudioManager>().Play("TextAudio");
 
-        
         DisplayNextSentence();
         
     }
 
     public void DisplayNextSentence()
     {
-        FindObjectOfType<AudioManager>().Play("TextAudio");
-        
+
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -62,6 +60,8 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence)
     {
+        FindObjectOfType<AudioManager>().Play("TextAudio");
+        
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {

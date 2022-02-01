@@ -12,7 +12,7 @@ public class DialoguePlayerTrigger : MonoBehaviour
     public GameObject Receptionist5;
 
     public int spoken = 0;
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 
