@@ -10,6 +10,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/DialogueManager.cs" />
+    </changedPaths>
+  </component>
   <component name="ProjectId" id="24Vq88xQhy9bBcXoRE4zGIuBmBf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,6 +58,7 @@
       <updated>1643725944179</updated>
       <workItem from="1643725975939" duration="665000" />
       <workItem from="1643726873855" duration="1026000" />
+      <workItem from="1643730221152" duration="342000" />
     </task>
     <servers />
   </component>
