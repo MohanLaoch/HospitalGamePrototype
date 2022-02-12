@@ -12,12 +12,13 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
 
-    
+    public bool canMove;
 
     void Update()
     {
-        
-        
+
+        if (canMove == true)
+        {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
@@ -26,12 +27,21 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Speed", movement.sqrMagnitude);
             if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 ||
                 Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
-                {
-                    animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
-                    animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+            {
+                animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
+                animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
 
-                }
-            
+            }
+        }
+        
+        if (canMove == false)
+        {
+            movement.x = 0;
+            movement.y = 0;
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 0);
+            animator.SetFloat("Speed", 0);
+        }
 
 
     }
