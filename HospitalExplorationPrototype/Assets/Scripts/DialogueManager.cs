@@ -13,8 +13,6 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
-    public Animator playeranimator;
-
     private Queue<string> sentences;
 
     public PlayerMovement playerMovement;
@@ -27,8 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
-        playeranimator.Play("PlayerIdle");
-
+   
         playerMovement.canMove = false;
                 
         animator.SetBool("IsOpen", true);
